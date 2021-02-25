@@ -10,7 +10,7 @@ function createHeader() {
     leftText.textContent = 'Los pollos';
     logo.appendChild(leftText);
 
-    const logoImage = createImage('logo-image', '/images/Logo.png', 'Logo');
+    const logoImage = createImage('logo-image', './images/Logo.png', 'Logo');
     logo.appendChild(logoImage);
 
     const rightText = document.createElement('div');

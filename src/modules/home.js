@@ -6,7 +6,7 @@ function createMain() {
     h1.innerText = 'The best Chicken in New Mexico';
     main.appendChild(h1);
 
-    const coverImage = createImage('cover', '/images/restaurant.png', "Photo pf the restaurant's intreior");
+    const coverImage = createImage('cover', './images/restaurant.png', "Photo pf the restaurant's intreior");
     main.appendChild(coverImage);
 
     const h2 = document.createElement('h2');
