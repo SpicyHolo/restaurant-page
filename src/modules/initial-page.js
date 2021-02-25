@@ -1,3 +1,5 @@
+import logopng from './images/Logo.png';
+
 function createHeader() {
     const header = document.createElement('header');
 
@@ -10,7 +12,7 @@ function createHeader() {
     leftText.textContent = 'Los pollos';
     logo.appendChild(leftText);
 
-    const logoImage = createImage('logo-image', './images/Logo.png', 'Logo');
+    const logoImage = createImage('logo-image', {logopng}, 'Logo');
     logo.appendChild(logoImage);
 
     const rightText = document.createElement('div');

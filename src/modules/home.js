@@ -1,3 +1,5 @@
+import restaurant from './images/restaurant.png';
+
 function createMain() {
     const main = document.createElement('main');
     main.id = "main";
@@ -6,7 +8,7 @@ function createMain() {
     h1.innerText = 'The best Chicken in New Mexico';
     main.appendChild(h1);
 
-    const coverImage = createImage('cover', './images/restaurant.png', "Photo pf the restaurant's intreior");
+    const coverImage = createImage('cover', {restaurant}, "Photo pf the restaurant's intreior");
     main.appendChild(coverImage);
 
     const h2 = document.createElement('h2');

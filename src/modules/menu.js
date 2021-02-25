@@ -1,3 +1,7 @@
+import FriedChicken from './images/FriedChicken.jpg';
+import ChickenNWaffles from './images/ChickenNWaffles.jpeg';
+import ChickenBurger from './images/ChickenBurger.jpeg';
+
 function setButtonActive(id) {
     const activeButton = document.querySelector('.menu.active');
     if(activeButton) activeButton.classList.remove('active');
@@ -34,20 +38,20 @@ function createMain() {
     const menuItems = [];
 
     menuItems.push(createMenuItem(
-        "./images/FriedChicken.jpg", 
+        {FriedChicken}, 
         "Fried Chicken Meal", 
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate quis massa vitae dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae pharetra est. Sed egestas risus nec turpis hendrerit, semper ullamcorper leo lacinia. Proin ut luctus nunc."
         ));
     main.appendChild(menuItems[menuItems.length-1]);
     menuItems.push(createMenuItem(
-        "./images/ChickenNWaffles.jpeg", 
+        {ChickenNWaffles}, 
         "Chicken & Waffles", 
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate quis massa vitae dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae pharetra est. Sed egestas risus nec turpis hendrerit, semper ullamcorper leo lacinia. Proin ut luctus nunc.."
         ));
     main.appendChild(menuItems[menuItems.length-1]);
 
     menuItems.push(createMenuItem(
-        "./images/ChickenBurger.jpeg", 
+        {ChickenBurger}, 
         "Chicken Burger Meal", 
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate quis massa vitae dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae pharetra est. Sed egestas risus nec turpis hendrerit, semper ullamcorper leo lacinia. Proin ut luctus nunc.."
         ));
