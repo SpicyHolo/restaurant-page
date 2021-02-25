@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+:root {
+    --color-yellow: #fedc01;
+    --color-red: #c9182a;
+    --color-blue: #244389;
+    --color-light-blue: #6bade7;
+}
+
+#main.menu {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-family: Stick, sans-serif;
+    font-weight: 600;
+}
+
+div.menu-item {
+    width: 100%;
+    height: 200px;
+    border-bottom: 2px solid var(--color-red);
+    margin: 20px 0 20px 0;
+    font-family: Stick, sans-serif;
+    font-size: 16px;
+}
+
+img.menu-item {
+    float: left;
+    height: 180px;
+    border: 2px solid var(--color-blue);
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 1920px) {
+    div.menu-item {
+        height: 400px;
+        font-size: 32px;
+    }
+    img.menu-item {
+        height: 360px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+    div.menu-item {
+        height: 400px;
+        font-size: 36px;
+    }
+    img.menu-item {
+        height: 360px;
+    }
+    h2 {
+        font-size: 64px;
+    }
+
+}
+
+@media screen and (min-width: 4096px) {
+    div.menu-item {
+        height: 600px;
+        font-size: 56px;
+    }
+    img.menu-item {
+        height: 540px;
+    }
+    h2 {
+        font-size: 96px;
+    }
+
+}
