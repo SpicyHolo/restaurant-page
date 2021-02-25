@@ -1,0 +1,8 @@
+#main.home {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+    font-family: Stick, sans-serif;
+    font-weight: 600;
+}
